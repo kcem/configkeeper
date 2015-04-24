@@ -33,6 +33,10 @@ setup(
     author_email='kcem@op.pl',
     url='https://github.com/kcem/configkeeper',
     packages=['configkeeper'],
+    install_requires=[
+        "PyYAML>=3.11",
+    ],
     tests_require=['tox'],
     cmdclass={'test': Tox},
+    zip_safe=True,
 )
